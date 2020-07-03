@@ -82,7 +82,7 @@ int main(void){
 
     printf("パターン番号(0,1,2): ");
     scanf("%d", &np);
-    printf("ノイズの数");
+    printf("ノイズの数:");
     scanf("%d", &noise);
 
     for(i=0; i<N; i++){
