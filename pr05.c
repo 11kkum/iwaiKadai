@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#define N 2
 typedef struct
 {
 	double w[2];
@@ -22,7 +22,7 @@ int main(void){
 
 		y = output(x, unit);
 
-		printf("出力:%d\n\n", );
+		printf("出力:%d\n\n", y);
 
 		printf("終了 yes=1, no=0:");
 		scanf("%d",&flag);
@@ -43,3 +43,4 @@ int output(int x[], neuron unit){
   else out=-1;
   
   return out;
+}

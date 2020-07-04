@@ -26,7 +26,8 @@ int output(int x[], neuron unit){
 int mask[N];
 
 void shuffle(void){
-    int i,  n, tmp;
+    int i = 0;
+    int n, tmp;
     n=(int)(N*(double)rand()/(RAND_MAX+1.0));
     tmp=mask[n];
     mask[n]=mask[i];

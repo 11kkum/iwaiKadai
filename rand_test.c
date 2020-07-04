@@ -3,7 +3,7 @@
 #define N 32
 
 int main(void){
-	int i, n;
+	int i, m;
 	double x;
 
 	srand(131);
