@@ -1,4 +1,6 @@
-/*2020604 菊池淳志*/
+/*2020604 菊池淳志
+outputとlearningが分からず未完成です
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +14,7 @@ typedef struct {
 int no;
 double eta=0.01;
 
-int output(neuron uint,int input[no][IN]){
+int output(neuron unit, int input[no][IN]){
     /*mp=ニューロンから総入力の和*/
     double mp;
     int out;
@@ -80,13 +82,17 @@ int main(void) {
     no = no % PAT;
     }while(flag<PAT);
 
-    printf("閾値:%d\n", unit.w[0]);
-    printf("入力値1:%d\n", unit.w[1]);
-    printf("入力値2:%d\n", unit.w[2]);
-    
+    printf("閾値:%lf\n", unit.w[0]);
+    printf("入力値1:%lf\n", unit.w[1]);
+    printf("入力値2:%lf\n", unit.w[2]);
+
     no = 0;
     do{
-
+        out = output();
+        printf("pattern 0: %d", out);
+        printf("pattern 1: %d", out);
+        printf("pattern 2: %d", out);
+        printf("pattern 3: %d", out);
     }while(no<PAT);
 
     return 0;

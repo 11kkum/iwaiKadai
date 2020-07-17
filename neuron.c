@@ -32,7 +32,7 @@ int main(void) {
         1.0, 1.0}, 1.5};
     int i, out, m;
     int input[PAT][IN];
-    int flag; 
+    int flag;
 
     input[0][0] = 1;
     input[0][1] = 1;
